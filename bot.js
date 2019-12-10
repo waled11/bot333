@@ -1,13 +1,13 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-var prefix = "1"
-var adminprefix = '1'
+var prefix = "3"
+var adminprefix = '3'
 
 
 //bc
 
 client.on("message", message => {
-    if (message.content.startsWith("1obc")) {
+    if (message.content.startsWith("3obc")) {
                  if (!message.member.hasPermission("ADMINISTRATOR"))  return;
   let args = message.content.split(" ").slice(1);
   var argresult = args.join(' ');
@@ -23,7 +23,7 @@ client.on("message", message => {
 //bc online
 
 
-  var prefix = "1";
+  var prefix = "3";
 
   client.on("message", message => {
   
@@ -66,13 +66,13 @@ m.sendMessage(args)
 });
 
   client.on('message', msg => {
-    if(msg.content === '1help')
+    if(msg.content === '3help')
     msg.reply('Check Your DM :white_check_mark:')
   });
   
   
   client.on("message", message => {
-    if (message.content === "1help") {
+    if (message.content === "3help") {
      const embed = new Discord.RichEmbed() 
          .setColor("#00FF00")
          .setThumbnail(message.author.avatarURL)
